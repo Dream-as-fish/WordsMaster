@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def switch_file():
-    file_name = './words.csv'
+    file_name = './resource/热词红宝书 第1版.xlsx'
     return file_name
 
 
@@ -10,7 +10,7 @@ file = switch_file()
 
 
 def open_file(file_name):
-    df = pd.read_csv(file_name)
+    df = pd.read_excel(file_name)
     return df
 
 
